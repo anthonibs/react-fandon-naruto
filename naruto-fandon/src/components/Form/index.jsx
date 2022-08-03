@@ -4,21 +4,8 @@ import DropdownList from '../DropdownList'
 import FieldText from '../FieldText'
 import './index.scss'
 
-const Form = () => {
-
-    const times = [
-        'Time 1',
-        'Time 2',
-        'Time 3',
-        'Time 4',
-        'Time 5',
-        'Time 6',
-        'Time 7',
-        'Time 8',
-        'Time 9',
-        'Time 10',
-    ]
-
+const Form = (props) => {
+ 
     const [nome, setNome] = useState('')
     const [clan, setClan] = useState('')
     const [avatar, setAvatar] = useState('')
@@ -26,7 +13,19 @@ const Form = () => {
 
     const aoSalvar = (e) => {
         e.preventDefault()
-        console.log('Form submetido: ', nome, clan, avatar, time);
+
+        // Recebe as informações como objeto
+        props.aoCalaboradorCadastrado({
+            nome,
+            clan,
+            avatar,
+            time
+        })
+
+        setNome('')
+        setClan('')
+        setAvatar('')
+        setTime('')
     }
 
     return (
@@ -58,7 +57,7 @@ const Form = () => {
                 <DropdownList
                     obrigatorio={true}
                     label="Time"
-                    itens={times}
+                    itens={props.nomeTimes}
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
                 />

@@ -9,7 +9,7 @@ const FieldText = (props) => {
     return (
         <fieldset className='field-text'>
             <label>{props.label}</label>
-            <input value={props.valor} onChange={aoDigitar} required={props.obrigatorio} placeholder={props.placeholder} />
+            <input value={props.valor} onChange={aoDigitar} required placeholder={props.placeholder} />
         </fieldset>
     )
 }
