@@ -9,8 +9,8 @@ const DropdownList = (props) => {
    
     return (
         <fieldset className='dropdown-List'>
-            <label>{props.label}</label>
-            <select onChange={aoDigitar} required={props.obrigatorio} value={props.valor}>
+            <label className='dropdown-List__label'>{props.label}</label>
+            <select className='dropdown-List__select' onChange={aoDigitar} required={props.obrigatorio} value={props.valor}>
                 <option value="" selected >Escolha aqui</option>
                 {props.itens.map(item => <option key={item}>{item}</option>)}
             </select>

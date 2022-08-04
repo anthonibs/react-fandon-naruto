@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import Button from '../Button'
 import DropdownList from '../DropdownList'
 import FieldText from '../FieldText'
 import './index.scss'
 
 const Form = (props) => {
- 
+
     const [nome, setNome] = useState('')
     const [clan, setClan] = useState('')
     const [avatar, setAvatar] = useState('')
@@ -31,7 +31,7 @@ const Form = (props) => {
     return (
         <section className='form'>
             <form onSubmit={aoSalvar}>
-                <h2>Preencha os dados dos para criar os cards do seus personagens</h2>
+                <h2 className='form__subtitle'>Preencha os dados dos para criar os cards do seus personagens</h2>
                 <FieldText
                     obrigatorio={true}
                     label="Personagem"
@@ -62,7 +62,7 @@ const Form = (props) => {
                     aoAlterado={valor => setTime(valor)}
                 />
                 <Button>
-                    Criar Card
+                    Criar Cartão
                 </Button>
             </form>
         </section>

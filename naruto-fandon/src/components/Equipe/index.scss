@@ -1,9 +1,12 @@
 .equipe {
     width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
     .cabecalho {
-        background-color: rgb(223, 220, 220);
-        border-radius: 10px 10px 0 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         img {
             width: 100px;
@@ -13,25 +16,52 @@
             border-radius: 50%;
             position: relative;
             bottom: -50px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
     }
 
     .rodape {
-        background-color: white;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, .08);
-        border-radius: 0px 0px 10px 10px;
-        padding-top: 90px;
+        padding-top: 65px;
         padding-bottom: 40px;
 
         h4 {
-            color: #6278f7;
-            font-size: 18px;
+            font-size: 2rem;
             line-height: 22px;
         }
 
         h5 {
-            font-size: 16px;
-            color: rgb(68, 68, 68)
+            padding-top: .325rem;
+            font-size: 1.2rem;
+            color: #5c5c5c;
+        }
+    }
+
+    .skill {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 8px 0;
+
+        .ability {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            border-right: 1px solid;
+        }
+
+        .rating {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .skill-text {
+            color: #5c5c5c;
+            padding: 5px;
+            font-weight: 600;
+            font-size: .8rem;
         }
     }
 }

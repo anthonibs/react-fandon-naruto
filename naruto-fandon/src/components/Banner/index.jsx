@@ -4,7 +4,10 @@ import './index.scss'
 function Banner() {
     return (
         <header className='banner'>
-            <h1 className='banner__title'>Personagens</h1>
+            <div className='banner__container'>
+                <h1 className='banner__title'>Narutopidia</h1>
+                <h2 className='banner__subtitle'>Personagens favoritos</h2>
+            </div>
         </header>
     )
 }

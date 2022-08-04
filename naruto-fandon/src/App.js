@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Banner from './components/Banner';
+import Equipe from './components/Equipe';
 import Footer from './components/Footer';
 import Form from './components/Form';
 import Time from './components/Times';
@@ -8,12 +9,10 @@ import listaDeTimes from './times.json';
 
 
 
-
 function App() {
   const [colaboradores, setColaboradores] = useState([])
 
   const aoNovoColaboradorAdicional = (colaborador) => {
-    debugger
     
     // Faz o spread e junta os colaboradores novos com os antigos
     setColaboradores([...colaboradores, colaborador])

@@ -1,28 +1,40 @@
 .banner {
+    display: flex;
     position: relative;
-    height: 350px;
+    align-items: center;
+    height: 400px;
+    box-shadow: rgba(100, 100, 111, .25) 0px 5px 8px 2px;
 
     &::before {
         content: '';
         display: block;
         height: 100%;
         width: 100%;
-        background-color: #06879e;
-        background-image: url('../../assets/images/banner-principal-naruto.png');
-        background-position: center;
+        background-color: #FE943C;
+        background-image: url('../../../public/images/banner-main.jpg');
+        background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: -1;
+    }
+
+    &__container {
+        margin-left: 3%;
+        max-width: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        color: #7e3329;
+        line-height: 1;
     }
 
     &__title {
-        margin: 0;
-        padding: 2rem;
-        font-size: 3rem;
-        line-height: normal;
-        color: #F7CE50;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        font-size: 5rem;   
+    }
+
+    &__subtitle {
+        margin-left: 3%;
+        font-size: 2.6rem;
     }
 
     img {
