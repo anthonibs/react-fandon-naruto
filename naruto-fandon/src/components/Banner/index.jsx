@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import './index.scss'
+import './banner.scss'
 
 function Banner() {
     return (

@@ -2,33 +2,33 @@
   "times": [
     {
       "nome": "Time Hiruzen",
-      "corPrimaria": "#d9f7e9",
-      "corSecundaria": "#57c278"
+      "corPrimaria": "#E4E4ED",
+      "corSecundaria": "#262626"
     },
     {
       "nome": "Time Minato",
-      "corPrimaria": "#e8f8ff",
-      "corSecundaria": "#82cffa"
+      "corPrimaria": "#F2F6BB",
+      "corSecundaria": "#F2D129"
     },
     {
       "nome": "Time Kakashi",
-      "corPrimaria": "#f0f8e2",
-      "corSecundaria": "#a6d157"
+      "corPrimaria": "#B9CBFF",
+      "corSecundaria": "#053259"
     },
     {
       "nome": "Time Kurenai",
-      "corPrimaria": "#fde7e8",
-      "corSecundaria": "#e06b69"
+      "corPrimaria": "#FEC7C3",
+      "corSecundaria": "#FF001B"
     },
     {
       "nome": "Time Guy",
-      "corPrimaria": "#fae9f5",
-      "corSecundaria": "#db6ebf"
+      "corPrimaria": "#DCFEFF",
+      "corSecundaria": "#10403B"
     },
     {
       "nome": "Time Asuma",
-      "corPrimaria": "#fff5d9",
-      "corSecundaria": "#ffba05"
+      "corPrimaria": "#E9E9F0",
+      "corSecundaria": "#A6A6A6"
     }
   ]
 }

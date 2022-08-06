@@ -1,12 +1,12 @@
 import { BsInstagram, BsTwitter, BsFacebook } from "react-icons/bs";
-import './index.scss'
+import './footer.scss'
 
 const Footer = (e) => {
     return (
         <footer className='footer'>
-            <ul>
+            <ul className="footer__list">
                 <li>
-                    <div className='footer__midia'>
+                    <div className='footer__social'>
                         <a href="#" target={'_blank'}>
                             <BsFacebook className="footer__icon" />
                         </a>
@@ -18,10 +18,8 @@ const Footer = (e) => {
                         </a>
                     </div>
                 </li>
-                <li className='footer__logo'>
-                    <a href="#">
-                        <img className='footer__logo' src={'/images/naruto-shippuden.svg'} alt="Logo Naruto Fandom" />
-                    </a>
+                <li>
+                    <img className='footer__logo' src={'/images/naruto-shippuden.svg'} alt="Logo Naruto Fandom" />
                 </li>
                 <li>Desenvolvido por <a target={'_blank'} href="https://www.linkedin.com/in/anthoni-broering-dos-santos-483774119/">Anthoni</a>.</li>
             </ul>

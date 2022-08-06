@@ -1,0 +1,42 @@
+@media (min-width: 360px) {
+    .dropdown-List {
+        border: none;
+
+        &__label {
+            color: #8B3A30;
+            display: block;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        &__select {
+            background-color: whitesmoke;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border: none;
+            color: #5c5c5c;
+            font-size: .8rem;
+            outline: none;
+            padding: .675rem;
+            width: 100%;
+
+            &:focus-visible {
+                outline: 2px solid #8B3A30;
+            }
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .dropdown-List {
+
+        &__label {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        &__select {
+            font-size: 1rem;
+        }
+    }
+}

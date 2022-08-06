@@ -1,4 +1,4 @@
-import './index.scss'
+import './fieldText.scss'
 
 const FieldText = (props) => {
 
@@ -9,7 +9,7 @@ const FieldText = (props) => {
     return (
         <fieldset className='field'>
             <label className='field__label'>{props.label}</label>
-            <input className='field__input' value={props.valor} onChange={aoDigitar} required placeholder={props.placeholder} />
+            <input className='field__input' type={props.type} value={props.valor} onChange={aoDigitar} required placeholder={props.placeholder} />
         </fieldset>
     )
 }

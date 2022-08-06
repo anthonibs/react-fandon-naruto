@@ -1,0 +1,44 @@
+@media (min-width: 360px) {
+    .button-container {
+
+        .button {
+            background-color: #8B3A30;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            box-shadow: rgba(0, 0, 0, 0.36) 0px 3px 8px;
+            cursor: pointer;
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-top: 20px;
+            outline: none;
+            padding: 16px;
+            transition: all .5s ease-in-out;
+            width: 100%;
+
+            &:hover,
+            &:focus-visible {
+                border: 2px solid #8B3A30;
+                background-color: transparent;
+                color: #8B3A30;
+                transition: all .5s ease-in-out;
+            }
+
+        }
+
+    }
+}
+
+@media (min-width: 767px) {
+    .button-container {
+
+        .button {
+            border-radius: 10px;
+            font-size: 1.2rem;
+            padding: 32px;
+            max-width: 30%;
+        }
+
+    }
+}

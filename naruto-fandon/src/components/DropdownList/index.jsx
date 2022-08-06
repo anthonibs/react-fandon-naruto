@@ -1,4 +1,4 @@
-import './index.scss'
+import './dropdownList.scss'
 
 const DropdownList = (props) => {
 

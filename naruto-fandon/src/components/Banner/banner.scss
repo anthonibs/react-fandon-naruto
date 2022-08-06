@@ -1,0 +1,76 @@
+@media (min-width: 360px) {
+    @font-face {
+        font-family: naruto;
+        src: url('../../../public/font/njnaruto.ttf');
+    }
+
+    .banner {
+        align-items: center;
+        box-shadow: rgba(100, 100, 111, .25) 0px 5px 8px 2px;
+        display: flex;
+        height: 300px;
+        position: relative;
+
+        &::before {
+            background: right / cover no-repeat url('../../../public/images/banner-phone-main.jpg'), #FE943C;
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+
+        &__container {
+            color: #7e3329;
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+            margin-left: 3%;
+            position: absolute;
+        }
+
+        &__title {
+            font-size: 2rem;
+            font-family: 'naruto';
+        }
+
+        &__subtitle {
+            font-family: 'naruto';
+            font-size: 1rem;
+            padding-top: .5rem;
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    .banner {
+        height: 400px;
+
+        &::before {
+            background: right / cover no-repeat url('../../../public/images/banner-main.jpg'), #FE943C;
+        }
+
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__subtitle {
+            font-size: 1.5rem;
+            padding-top: .675rem;
+            text-align: right;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .banner {
+        &__title {
+            font-size: 5rem;
+        }
+
+        &__subtitle {
+            font-size: 2rem;
+        }
+    }
+}

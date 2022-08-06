@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Banner from './components/Banner';
-import Equipe from './components/Equipe';
 import Footer from './components/Footer';
 import Form from './components/Form';
 import Time from './components/Times';
@@ -23,7 +22,7 @@ function App() {
     <main className="App">
       <Banner />
       <Form nomeTimes={listaDeTimes.times.map(time => time.nome)} aoCalaboradorCadastrado={colaborador => aoNovoColaboradorAdicional(colaborador)} />
-
+    
       {/* Renderiza as cores personalizadas de cada seção de times */}
       {listaDeTimes.times.map(time => <Time
         key={time.nome} 
