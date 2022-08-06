@@ -20,6 +20,15 @@ Clique [aqui](https://react-fandon-narutos.vercel.app/) para ir para o site.
 ## Para dispositivos Móveis, Tablets e Desktops.
 
 
+
+https://user-images.githubusercontent.com/77931577/183230769-0bf639d4-f58b-4b44-a584-7d878c49b16d.mp4
+
+
+https://user-images.githubusercontent.com/77931577/183230780-ed8ab460-4684-4e56-861e-98659a6b7ae6.mp4
+
+
+
+
 ## Instalação
 
 Para iniciar o projeto você precisa ter o  [Node.js](https://nodejs.org/en/)  instalado no seu sistema operacional.
